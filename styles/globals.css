@@ -1,0 +1,55 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    overflow-x: hidden;
+    /* background-color: rgb(244, 244, 244); */
+
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+input {
+  font-size: 1rem;
+}
+
+.user-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: .25rem;
+  margin-top: 1rem;
+}
+
+.card {
+  border: 1px solid black;
+  background-color: white;
+  padding: .5rem;
+}
+
+.card > .header {
+  margin-bottom: .25rem;
+}
+
+.card > .body {
+  font-size: .8rem;
+  color: #777;
+}
+
+.hide {
+  display: none;
+}
